@@ -7,7 +7,7 @@
   },
   "settings": {
     "react": {
-        "version": "detect"
+      "version": "detect"
     }
   },
   "extends": [
@@ -22,8 +22,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
